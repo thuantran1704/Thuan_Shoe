@@ -13,6 +13,8 @@ const RegisterScreen = ({ location, history }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [name, setName] = useState('')
+    const [birthday, setBirthday] = useState('')
+    const [phone, setPhone] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
     const [message, setMessage] = useState(null)
 
@@ -33,10 +35,13 @@ const RegisterScreen = ({ location, history }) => {
     const submitHandler = (e) => {
         e.preventDefault()
         // Dispatch Register
-        if (password !== confirmPassword) {
+        if (phone.length !== 10) {
+            setMessage('Phone number is not in the correct format !')
+        }
+        else if (password !== confirmPassword) {
             setMessage('Password do not match !')
         } else {
-            dispatch(register(name, email, password))
+            dispatch(register(name, email, password, birthday, phone))
         }
     }
 
@@ -53,11 +58,26 @@ const RegisterScreen = ({ location, history }) => {
                         onChange={(e) => setName(e.target.value)}></Form.Control>
                 </Form.Group>
 
+                <Form.Group controlId='phone'>
+                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Control type='number' placeholder='Enter your phone number'
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}>
+                    </Form.Control>
+                </Form.Group>
+
+                <Form.Group controlId='birthday'>
+                    <Form.Label>Birthday</Form.Label>
+                    <Form.Control type='date' placeholder='Enter your birthday' value={birthday}
+                        onChange={(e) => setBirthday(e.target.value)}></Form.Control>
+                </Form.Group>
+
                 <Form.Group controlId='email'>
                     <Form.Label>Email Address</Form.Label>
                     <Form.Control type='email' placeholder='Enter email' value={email}
                         onChange={(e) => setEmail(e.target.value)}></Form.Control>
                 </Form.Group>
+
 
                 <Form.Group controlId='password'>
                     <Form.Label>Password</Form.Label>
