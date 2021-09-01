@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { Carousel, Image, Row, Col } from 'react-bootstrap'
+import { Carousel, Image, Row, Col } from 'react-bootstrap-v5'
 import Message from './Message'
 import Loader from './Loader'
 import { listTopProducts } from '../actions/productActions'

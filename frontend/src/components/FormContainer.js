@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Container } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap-v5'
 
 
 const FormContainer = ({ children }) => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col, Button, Form } from 'react-bootstrap'
+import { Row, Col, Button, Form } from 'react-bootstrap-v5'
 import FormContainer from '../components/FormContainer'
 import CheckoutSteps from '../components/CheckoutSteps'
 import { savePaymentMethod } from '../actions/cartActions'

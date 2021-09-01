@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button, Row, Col } from 'react-bootstrap'
+import { Form, Button, Row, Col } from 'react-bootstrap-v5'
 
 const AdminSearchBox = ({ history, type }) => {
     const [keyword, setKeyword] = useState('')

@@ -25,7 +25,7 @@ import Navigation from './components/Navigation'
 
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap-v5'
 
 const App = () => {
   return (

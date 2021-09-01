@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col, Button, Form, Table } from 'react-bootstrap'
+import { Row, Col, Button, Form, Table } from 'react-bootstrap-v5'
 import { LinkContainer } from 'react-router-bootstrap'
 import Message from '../components/Message'
 import Loader from '../components/Loader'

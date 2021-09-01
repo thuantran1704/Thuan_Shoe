@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { Carousel, Row, Col, Image, ListGroup, Button, Form } from 'react-bootstrap' //
+import { Carousel, Row, Col, Image, ListGroup, Button, Form } from 'react-bootstrap-v5' //
 import Rating from '../components/Rating'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -126,7 +126,7 @@ const ProductScreen = ({ history, match }) => {
                                             } */}
 
                                             <Carousel
-                                           
+                                                className="carousel carousel-dark slide"
                                                 time={1500}
                                                 automatic={true}
                                                 slideNumber={true}

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Route, Link } from 'react-router-dom'
-import { Nav, NavDropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Nav, NavDropdown } from 'react-bootstrap-v5'
 import { LinkContainer } from 'react-router-bootstrap'
 
 const Navigation = () => {
@@ -25,7 +25,7 @@ const Navigation = () => {
                         <div class="dropdown-divider" />
 
                         <LinkContainer to='/brand/Converse'>
-                        <NavDropdown.Item><strong>Converse</strong></NavDropdown.Item>
+                            <NavDropdown.Item><strong>Converse</strong></NavDropdown.Item>
                         </LinkContainer>
                     </NavDropdown>
                 </Nav>
